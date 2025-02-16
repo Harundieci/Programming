@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Portfolio Website",
+        "description": "A responsive portfolio website showcasing my skills and projects.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "images/portfolio.jpg",
+        "link": "#"
+    },
+    {
+        "title": "E-commerce Platform",
+        "description": "A full-stack e-commerce application with user authentication and payment integration.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "image": "images/ecommerce.jpg",
+        "link": "#"
+    },
+    {
+        "title": "Task Management App",
+        "description": "A task management application with real-time collaboration features.",
+        "technologies": ["Vue.js", "Firebase"],
+        "image": "images/taskmanager.jpg",
+        "link": "#"
+    }
+]

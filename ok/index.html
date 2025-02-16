@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>My Portfolio</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#projects"><span>Projects</span></a></li>
+                    <li><a href="#skills"><span>Skills</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section id="about" class="dashboard-section">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="images/harun.jpg" alt="Harun's Profile Picture">
+                    </div>
+                    <div class="profile-info">
+                        <h2>About Me</h2>
+                        <div class="card">
+                            <p>Hi, I'm a passionate web developer with 5+ years of experience in building responsive and user-friendly websites. I specialize in front-end development using modern technologies like React and Vue.js, and I'm always eager to learn new skills and take on challenging projects.</p>
+                            <p>When I'm not coding, you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="dashboard-section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio showcasing my skills and projects.</p>
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="project1.html" class="view-details">View Details</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce application with payment integration.</p>
+                        <div class="technologies">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="project2.html" class="view-details">View Details</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Management App</h3>
+                        <p>Real-time task management with cloud synchronization.</p>
+                        <div class="technologies">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="project3.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="dashboard-section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">HTML</div>
+                    <div class="skill-card">CSS</div>
+                    <div class="skill-card">JavaScript</div>
+                </div>
+            </section>
+
+            <section id="contact" class="dashboard-section">
+                <h2>Contact</h2>
+                <div class="card">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <section id="feedback" class="dashboard-section">
+        <h2>Feedback</h2>
+        <div class="card">
+            <textarea id="feedbackMessage" placeholder="Type your feedback here..." required></textarea>
+            <button id="submitFeedback" class="submit-btn">Submit Feedback</button>
+        </div>
+        <div id="feedbackContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
